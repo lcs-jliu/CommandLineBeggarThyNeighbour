@@ -220,7 +220,6 @@ class BeggarThyNeighbour {
         } else {
             print("Recursion level is \(recursionLevel); showdown ended at a higher recursion level.")
             print("No cards change hands.\n")
-
         }
         
         // End this level of recursion, offence won and got the pot
@@ -247,7 +246,6 @@ class BeggarThyNeighbour {
         }
 
         reportCardCount()
-        
 
     }
     
@@ -277,7 +275,6 @@ class BeggarThyNeighbour {
         } else {
             print("The computer wins.")
         }
-        
         
     }
     
@@ -310,14 +307,15 @@ class BeggarThyNeighbour {
     
     // Game is over when either player has no more cards
     func gameNotOver() -> Bool {
+        
         if player.cards.count == 0 || computer.cards.count == 0 {
             return false
         } else {
             return true
         }
+        
     }
 
-    
 }
 
 // Start a game...
