@@ -194,7 +194,7 @@ class BeggarThyNeighbour {
             
             // What's in the pot?
             describeCards(in: pot)
-            if interactiveMode { waitForUserInput() }
+            waitForUserInput()
 
             // Does the defence become the offence?
             if pot.topCard!.isFaceCard {
