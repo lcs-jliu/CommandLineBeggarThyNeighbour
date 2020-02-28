@@ -194,6 +194,8 @@ class BeggarThyNeighbour {
             
             // What's in the pot?
             describeCards(in: pot)
+            
+            // Wait for ENTER before continuing
             waitForUserInput()
 
             // Does the defence become the offence?
